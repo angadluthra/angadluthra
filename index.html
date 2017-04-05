@@ -37,7 +37,35 @@
     
     
     
-	<body>    
+	<body>  
+        
+        <script language=JavaScript>
+<!--
+///////////////////////////////////
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+return false;
+}
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("return false")
+// -->
+</script>
+        
         
         <!-- PAGE -->
 	<div id="page" class="hfeed site">
@@ -73,7 +101,7 @@
                             <!-- SOCIAL -->
                             <p>
                                 <a class="social-link facebook" href="https://www.facebook.com/angadsinghluthra"></a>
-                                <a class="social-link website" href="https://www.nukewebbed.com"></a>
+                                <a class="social-link behance" href="https://www.behance.net/angadluthra"></a>
                                 <a class="social-link linkedin" href="https://in.linkedin.com/in/angadsinghluthra"></a>
                                 <a class="social-link instagram" href="https://wwww.instagram.com/angadluthra"></a>
                             </p>
@@ -289,21 +317,21 @@
                                             <div class="fun-fact">
                                                 <i class="pe-7s-map-marker"></i>
                                                 <!--<img src="images/site/icon-03.png" alt="image"/>-->
-                                                <h4>based in Houston, USA</h4>
+                                                <h4>Earth</h4>
                                             </div>
                                             <!-- fun-fact -->
                         
                                             <!-- fun-fact -->
                                             <div class="fun-fact">
                                                 <i class="pe-7s-call"></i>
-                                                <h4>Tel : +123 456 78900</h4>
+                                                <h4>Tel : +91 987 3258 203</h4>
                                             </div>
                                             <!-- fun-fact -->
                         
                                             <!-- fun-fact -->
                                             <div class="fun-fact">
                                                 <i class="pe-7s-mail"></i>
-                                                <h4>johndoe [at] gmail.com</h4>
+                                                <h4>me [at] angadluthra.com</h4>
                                             </div>
                                             <!-- fun-fact -->
                         
