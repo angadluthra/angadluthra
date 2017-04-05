@@ -419,6 +419,10 @@ textarea,
 .header-wrap > img {
 	display: none;
 	}
+.logo{
+    margin-top: 40px;
+        
+}
 
 /* NAV MENU */
 .nav-menu ul { 
