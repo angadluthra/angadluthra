@@ -406,7 +406,7 @@ textarea,
     display: block; content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: #275363; opacity: .35; -webkit-transition: opacity 0.5s 0.4s, visibility 0s 0.9s; transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
 	}
 .header .site-title {
-	font-size: 44px; font-size: 10vw; letter-spacing: 0; font-weight: 100; color: #fff; line-height: 1; padding: 0; margin: 0;
+	font-size: 30px; font-size: 10vw; letter-spacing: 0; font-weight: 100; color: #fff; line-height: 1; padding: 0; margin: 0;
 	}
 .header-title-link + .site-title { margin: 10px 0; font-size: 64px;
 	}
@@ -642,6 +642,10 @@ textarea,
 	content: "\e62e"
 	}
 
+.alignment {
+    align-content: center;
+    margin-top: 20px;
+}
 /* HTTP ALERT */
 .http-alert {
  	text-align: center
