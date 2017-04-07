@@ -39,33 +39,19 @@
     
 	<body>  
         
-        <script language=JavaScript>
-<!--
-///////////////////////////////////
-///////////////////////////////////
-function clickIE4(){
-if (event.button==2){
-return false;
-}
-}
-function clickNS4(e){
-if (document.layers||document.getElementById&&!document.all){
-if (e.which==2||e.which==3){
-return false;
-}
-}
-}
-if (document.layers){
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown=clickNS4;
-}
-else if (document.all&&!document.getElementById){
-document.onmousedown=clickIE4;
-}
-document.oncontextmenu=new Function("return false")
-// -->
+        <script type="text/javascript">
+$(document).ready(function () {
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+   
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+});
 </script>
-        
         
         <!-- PAGE -->
 	<div id="page" class="hfeed site">
@@ -87,8 +73,8 @@ document.oncontextmenu=new Function("return false")
                         
                     
                         
-                             <a class="header-title-link"href="https://angadluthra.github.io/Angad-Luthra/index.html">
-<img border="0" alt="Logo" src="https://github.com/angadluthra/Angad-Luthra/blob/gh-pages/images/site/finallogo.png?raw=true" width="672" height="297"> 
+                             <a class="header-title-link"href="https://angadluthra.me">
+                                 <img border="0" alt="Logo" src="https://github.com/angadluthra/Angad-Luthra/blob/gh-pages/images/site/finallogo.png?raw=true" width="672" height="297"></a>
                     
                     
                         <p class="site-description">I am <strong id="typist-element" data-typist="a designer., an innovator., an entrepreneur.">practical.</strong></p>
