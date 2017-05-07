@@ -619,16 +619,27 @@ textarea,
 		position: absolute; left: 50%; top: 50%; margin: -33px 0 0 -33px; width: 66px; line-height: 66px; font-size: 66px; text-align: center; content: "\e69d"; color: #fff;
 		}
 	.video.hentry .mask:before {
-		content: "\e6a5";
+		content: "\e66f";
 		}
-	.audio.hentry .mask:before {
-		content: "\e62f";
+	.web.hentry .mask:before {
+		content: "\e672";
 		}
-	.image.hentry .mask:before {
+    .app.hentry .mask:before {
+		content: "\e627";
+		}
+    .branding.hentry .mask:before {
+		content: "\e692";
+		}
+	.illustration.hentry .mask:before {
 		content: "\e6bf"
 		}
+
+.motion.hentry .mask:before {
+		content: "\e604"
+		}
+
 	.url.hentry .mask:before {
-		content: "\e6bc";
+		content: "\e74a";
 		}
 
 /* LATEST POSTS */
